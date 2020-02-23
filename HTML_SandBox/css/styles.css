@@ -1,0 +1,29 @@
+html{
+  background-color: rgb(59, 1, 42); 
+  padding: 150px;
+}
+body{
+    background-color: rgb(236, 103, 159);
+   position: relative;
+}
+
+header{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+    }
+
+
+
+nav{
+   
+}
+footer{
+    
+}
+header, nav, footer{
+    border: rgb(79, 170, 255) 1px solid;
+    margin-bottom: 2rem;
+    
+}
+

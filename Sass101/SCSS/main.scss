@@ -1,0 +1,24 @@
+    $primary-color:#001f31;
+    $accent-color: rgb(0, 202, 202);
+    $text-color:#fff;
+    $font-wights:("regular":400, "medium":500, "bold":700);
+
+    body {
+        background: $primary-color;
+        font-weight: map-get($map: $font-wights, $key: medium);
+        color: $accent-color;
+    }
+
+    .main {
+        width: 80%;
+        margin: 0 auto;
+
+        #{&}__paragraph {
+            font-weight: map-get($font-wights,  regular);
+
+
+        }
+        &:hover{
+            color: palevioletred;
+        }
+    }
