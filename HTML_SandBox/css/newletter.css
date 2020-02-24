@@ -1,17 +1,15 @@
-html{
-    height: 100%;
+html {
+    height: 100vh;
     width: 100%;
     color: #222;
-    font-family:'Poppins' sans-serif;
+    font-family: 'Poppins'sans-serif;
 }
+
 body {
     color: white;
     display: flex;
     background-color: #f6f5f7;
     font-size: 3em;
-}
-#sub1{
-    font-size: .8em !important;
 }
 
 .container {
@@ -20,169 +18,172 @@ body {
     align-items: center;
     flex-direction: column;
     align-self: center;
-    height: 700px;
+    height: auto;
     background: linear-gradient(248deg, rgba(0, 90, 139, 1) 0%, rgb(0, 52, 80, 1)100%);
     box-shadow: 5px 10px 8px #888888;
     border-radius: .8rem;
-    margin: 0 auto;
 
+
+}
+
+#subtitle1 {
+    font-size: .9em;
+}
+
+#subtitle2 {
+    font-size: 1.5rem;
+}
+
+h1 {
+    margin: 1rem 0 2rem;
+}
+
+p,
+sub {
+    margin: 1rem 0 2rem;
 
 }
 
 
 
 .btn {
-    margin: 2rem;
-}
+    color: #fff;
 
-#go-back {
-    display: none;
+    margin: 2rem;
+    border-radius: 1.2rem;
+    background-color: transparent;
+    border: .1em solid white;
+    padding: .2rem 1rem;
+
+
 }
 
 #cancel {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    color: white;
-    border: .08rem solid white;
-    border-radius: 1.8rem;
+    background-color: orange;
+    border-color: orange;
+    padding: .2rem 2.7rem;
+    transition: .8s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 
-}
-
-img {
-    max-height: 250px;
 }
 
 #cancel:hover {
-    border-color: #2388a5;
-    background-color: #2388a5;
+    border-color: darkorange;
+    background-color: darkorange;
+    color: #fff;
+    padding: .2rem 2.7rem;
 }
 
+
 #go-back {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    color: white;
-    border: .08rem solid white;
-    border-radius: 1.8rem;
+    display: none;
+
+    border-color: white;
+    background-color: transparent;
 
 }
 
 #go-back:hover {
     border-color: #2388a5;
     background-color: #2388a5;
+    color: #fff;
 }
 
 #unsubscribe {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color: white;
     border-color: white;
     border-radius: 2rem;
-    border: .08rem solid rgb(248, 162, 3);
-    border-radius: 1.8rem;
 
 }
 
 #unsubscribe:hover {
-
-    border-color: rgb(247, 182, 62);
+    color: white;
+    background-color: #2388a5;
     border-radius: 2rem;
-    border: .08rem solid rgb(247, 182, 62);
+    border-color: #2388a5;
 
 
 }
 
-h1,
-p,
-sub {
-    margin-bottom: 2rem;
+/* #unsubscribe:hover::before{
+    height: 180%;
+} */
+
+
+
+img {
+    width: 25%;
+    height: auto;
 
 }
 
+
+
+/* 
 @media (min-width: 576px) {
-    .container {
-        height: 700px;
+  h1{
+      font-size: .2em;
+  }
 
-    }
-
-    sub,
-    p {
-        font-size: 89px;
-    }
 }
 
 
 @media (min-width: 768px) {
-    .container {
-        height: 590px;
-    }
 
-    sub,
-    p {
-        font-size: 3em;
-    }
 }
 
 @media (min-width: 992px) {
-    .container {
-        height: 600px;
-    }
-    sub, p{
-        font-size: 8em;
-    }
-}
+    img{border: 2px solid yellow;}
+} */
 
-
-@media (min-width: 1200px) {
-    .container {
-        height: 650px;
-    }
-}
-
-@keyframes shake {
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
     0% {
-        transform: translate(1px, 1px);
+      opacity:0;
     }
-
-    10% {
-        transform: translate(-1px, 0px);
-    }
-
-    20% {
-        transform: translate(1px, 0px);
-    }
-
-    30% {
-        transform: translate(-1px, 0px);
-    }
-
-    40% {
-        transform: translate(1px, 0px);
-    }
-
-    50% {
-        transform: translate(-1px, 0px);
-    }
-
-    60% {
-        transform: translate(1px, 0px);
-    }
-
-    70% {
-        transform: translate(-1px, 0px);
-    }
-
-    80% {
-        transform: translate(1px, 0px);
-    }
-
-    90% {
-        transform: translate(-1px, 0px);
-    }
-
     100% {
-        transform: translate(1px, 0px);
+      opacity:1;
     }
-
-}
-
-
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }

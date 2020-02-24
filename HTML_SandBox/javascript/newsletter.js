@@ -20,7 +20,8 @@ $(document).ready(function () {
     //animation
     $("#unsubscribe").mouseenter(function e_shake() { $("#envelope").animate({ marginRight: "-5px" }, 50).animate({ marginRight: "0px" }, 50).animate({ marginRight: "5px" }, 50).animate({ marginRight: "-5px" }, 50).animate({ marginRight: "0px" }, 50).animate({ marginRight: "5px" }, 50).animate({ marginRight: "-5px" }, 50).animate({ marginRight: "0px" }, 50).animate({ marginRight: "5px" }, 50).animate({ marginRight: "-5px" }, 50).animate({ marginRight: "0px" }, 50).animate({ marginRight: "5px" }, 50); });
     //$("#cancel").mouseenter(function e_shake() { $("#envelope").animate({ top: "-5px" }, 50).animate({ top: "0px" }, 50).animate({ top: "5px" }, 50).animate({ top: "-5px" }, 50).animate({ top: "0px" }, 50).animate({ top: "5px" }, 50).animate({ top: "-5px" }, 50).animate({ top: "0px" }, 50).animate({ top: "5px" }, 50).animate({ top: "-5px" }, 50).animate({ top: "0px" }, 50).animate({ top: "5px" }, 50) ;} );
-
+    
+   
     //button listeners
     unsubscribeButton.addEventListener("click", unsubscribeFunction);
     cancelButton.addEventListener("click", cancelFunction);
@@ -33,7 +34,7 @@ $(document).ready(function () {
         $("#go-back").css("display", "inline-flex");
         $("#cancel").css("display", "none");
 
-        $("#envelope").attr("src", "img/sad1.gif");
+        $("#envelope").attr("src", "img/Crying-Envelope.png");
     }
 
 
@@ -43,7 +44,7 @@ $(document).ready(function () {
         $("#unsubscribe").css("display", "none");
         $("#go-back").css("display", "inline-flex");
         $("#cancel").css("display", "none");
-        $("#envelope").attr("src", "img/happy.gif");
+        $("#envelope").attr("src", "img/Happy-Envelope.png");
 
 
 
@@ -55,7 +56,7 @@ $(document).ready(function () {
         $("#unsubscribe").css("display", "inline-flex");
         $("#go-back").css("display", "none");
         $("#cancel").css("display", "inline-flex");
-        $("#envelope").attr("src", "img/envelope.png");
+        $("#envelope").attr("src", "img/Sad-Envelope.png");
     }
 
 
