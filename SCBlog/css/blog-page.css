@@ -26,7 +26,7 @@ body {
     height: 40px;
     line-height: 40px;
     border: none;
-    border-bottom: 1px solid rgb(91, 126, 152);
+    border-bottom: 1px solid #0487A5;
     font-size: 0.95em;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -34,12 +34,12 @@ body {
 }
 
 .widget.search input::-moz-placeholder {
-    color: #aaa;
+    color: #0487A5;
     font-family: "Open Sans", sans-serif;
 }
 
 .widget.search input::-webkit-input-placeholder {
-    color: rgb(91, 126, 152);
+    color: #0487A5;
     ;
     font-family: "Open Sans", sans-serif;
 }
@@ -78,9 +78,13 @@ body {
 
 }
 
-.blog-post__category a,
-.blog-post__author a {
-    font-size: 1.7rem;
+a {
+    font-size: 1rem;
     color: #0487A5;
-
 }
+
+
+
+/* Light blue: 0487A5
+
+Navy blue: 083151 */
