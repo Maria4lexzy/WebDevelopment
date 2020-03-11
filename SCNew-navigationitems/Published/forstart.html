@@ -1,0 +1,190 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.FoerOpstart>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "SC_WebBase.cshtml";
+}
+
+    <!-- section1 -->
+        <section class=" opstart-container py-5" id="opstart__s1">
+            <div class="sc-container">
+                <!-- images + subtitles -->
+                <div class="row opstart__s1-icons text-center">
+                    <div class=" col-xs-12 col-sm-6 col-lg-3">
+                        <img src=" /media/1781/ide2.svg">
+                        <h3 class="display-5">@Umbraco.Field("s1Image1Title")</h3>
+                    </div>
+
+                    <div class="s-one__div col-xs-12 col-sm-6 col-lg-3">
+                        <img src="  /media/1800/udfoersel2.svg">
+                        <h3 class="display-5">@Umbraco.Field("s1Image2Title")</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <img src="/media/1765/evner2.svg">
+                        <h3 class="display-5">@Umbraco.Field("s1Image3Title")</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <img src="  /media/1771/forretningsplan2.svg">
+                        <h3 class="display-5">@Umbraco.Field("s1Image4Title")</h3>
+                    </div>
+                </div>
+                <!-- bottom text -->
+                <div class="row text-center">
+                    <div class="col-12">
+                        <b>
+                            
+                       <sub>@Umbraco.Field("s1Description")</sub>
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            <section class="opstart-container" id="opstart__s2">
+            <div class="sc-container">
+                <div class="row text-center ">
+                    <!-- opstart__triangle image -->
+                    <div class="col-sm-12 opstart__triangle">
+                        <img src="/media/1798/triangle.svg">
+                    </div>
+                    <div class="col-sm-12 opstart__top">
+                        <img src="/media/1780/ide.svg">
+                        <h3 class="display-5">@Umbraco.Field("s2Title")</h3>
+                        <!-- <hr class="s-two__hr"> -->
+                    </div>
+                </div>
+                <div class="row opstart__bottom">
+                    <div class="col-5 opstart__left text-center">
+                        <p>@Umbraco.Field("s2LeftDescription")</p>
+                    </div>
+                    <div class="col-2 opstart__line text-center"><img src="/media/1786/linje.svg">
+                    </div>
+                    <div class="col-5 text-center opstart__rightbox ">
+                        <div class="opstart__right">
+                            <p>@Umbraco.Field("s2RightDescription")</p>
+                            <!-- cchat icon -->
+                            <img src="/media/1792/qa.svg">
+                        </div>
+                        <div class="opstart__right-bottom display-4">
+                            <p>@Umbraco.Field("s2RightBottom")</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <!-- section 3 -->
+        <section class="opstart-container" id="opstart__s3">
+            <div class=" sc-container">
+                <div class="row text-center ">
+                    <!-- opstart__triangle image -->
+                    <div class="col-sm-12 opstart__triangle">
+                        <img src="/media/1798/triangle.svg">
+                    </div>
+                    <div class="col-sm-12 opstart__top">
+                        <img src="/media/1800/udfoersel2.svg">
+                        <h3 class="display-5">@Umbraco.Field("s3Title")/h3>
+                        <!-- <hr class="s-two__hr"> -->
+                    </div>
+                </div>
+                <div class="row opstart__bottom">
+                    <div class="col-5 opstart__left text-center">
+                        <p>@Umbraco.Field("s3LeftDescription")</p>
+
+                    </div>
+                    <div class="col-2 opstart__line text-center"><img src="/media/1786/linje.svg">
+                    </div>
+                    <div class="col-5 text-center opstart__rightbox ">
+                        <div class="opstart__right">
+
+                            <p>@Umbraco.Field("s3RightDescription")</p>
+
+                            <!-- cchat icon -->
+                            <img src="/media/1793/qa2.svg">
+                        </div>
+                        <div class="opstart__right-bottom display-4">
+                            <p>@Umbraco.Field("s3RightBottom")</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+              <!-- section 4 -->
+        <section class="opstart-container" id="opstart__s4">
+            <div class="sc-container">
+                <div class="row text-center ">
+                    <!-- opstart__triangle image -->
+                    <div class="col-sm-12 opstart__triangle">
+                        <img src="/media/1798/triangle.svg">
+                    </div>
+                    <div class="col-sm-12 opstart__top">
+                        <img src="/media/1764/evner.svg">
+                        <h3 class="display-5">@Umbraco.Field("s4Title")</h3>
+                        <!-- <hr class="s-two__hr"> -->
+                    </div>
+                </div>
+                <div class="row opstart__bottom">
+                    <div class="col-5 opstart__left text-center">
+                        <p>@Umbraco.Field("s4LeftDescription")
+                        </p>
+                       
+                    <div class="col-2 opstart__line text-center"><img src="/media/1786/linje.svg">
+                    </div>
+                    <div class="col-5 text-center opstart__rightbox ">
+                        <div class="opstart__right">
+                         <p>@Umbraco.Field("s4RightDescription")</p>
+                            <!-- cchat icon -->
+                            <img src="/media/1792/qa.svg"></div>
+                        <div class="opstart__right-bottom display-4">
+                         <p>@Umbraco.Field("s4RightBottom")</p>
+                                        <p>what???</p>         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 5 -->
+        <section class="opstart-container" id="opstart__s5">
+            <div class="sc-container">
+                <div class="row text-center ">
+                    <!-- opstart__triangle image -->
+                    <div class="col-sm-12 opstart__triangle">
+                        <img src="/media/1798/triangle.svg">
+                    </div>
+                    <div class="col-sm-12 opstart__top">
+                        <img src="/media/1771/forretningsplan2.svg">
+                        <h3>@Umbraco.Field("s5Title")</h3>
+                        <!-- <hr class="s-two__hr"> -->
+                    </div>
+                </div>
+                <div class="row opstart__bottom text-center">
+                    <div class="offset-1 col-10">
+                        <p>@Umbraco.Field("s5Description") </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 6 -->
+        <section class="opstart-container py-5" id="opstart__s6">
+            <div class="sc-container">
+                <div class="row text-center sc-heading">
+                    <div class="col-sm-12 offset-md-3 col-md-6">
+                        <h4>@Umbraco.Field("s6Description") </h4>
+                        <p>@Umbraco.Field("s6Description") </p>
+                        <button class="btn btn-info">@Umbraco.Field("s6ButtonText") </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 7 -->
+        <section class="opstart-container py-5" id="opstart__s7">
+            <div class="sc-container">
+                <div class="row text-center sc-heading">
+                    <div class="col-sm-12 offset-md-3 col-md-6 ">
+                        <h4>@Umbraco.Field("s7Title") </h4>
+                        <p>@Umbraco.Field("s7Description") </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>

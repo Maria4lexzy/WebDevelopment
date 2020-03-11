@@ -1,0 +1,189 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.HelperPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "SC_WebBase.cshtml";
+}
+<!-- section 1 -->
+<section class="hvem-h py-5" id="hvem-h__s1">
+    <div class="sc-container">
+
+        <div class=" row text-center sc-heading">
+            <div class=" col-12">
+                <h2 class="display-4 ">@Umbraco.Field("s1Title")</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+
+            <div class=" col-sm-12 col-md-4 col-lg-4 ">
+                <div class="hvem-h__s1-bg"> <img src=" /media/1780/ide.svg"></div>
+                <h3 class="display-5">@Umbraco.Field("s1Image1Title")</h3>
+                <p>@Umbraco.Field("s1Image1Description")</p>
+
+            </div>
+            <div class=" col-sm-12 col-md-4 col-lg-4">
+                <div class="hvem-h__s1-bg" id="hvem-h__s1-ligtblue"> <img src=" /media/1782/kom-i-gang.svg"></div>
+                <h3 class="display-5">@Umbraco.Field("s1Image2Title")</h3>
+                <p>@Umbraco.Field("s1Image2Description")</p>
+
+            </div>
+            <div class=" col-sm-12 col-md-4 col-lg-4">
+                <div class="hvem-h__s1-bg"> <img src="/media/1772/godt-i-gang.svg"></div>
+                <h3 class="display-5">@Umbraco.Field("s1Image3Title")</h3>
+                <p>@Umbraco.Field("s1Image3Description")</p>
+
+            </div>
+        </div>
+</section>
+
+
+
+<!-- section 2 -->
+<section class="hvem-h py-5" id="hvem-h__s2">
+    <div class="sc-container">
+        <div class="row text-center sc-heading">
+            <div class="col-12">
+                <h2 class="display-5">@Umbraco.Field("s2Title")</h2>
+
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class=" col-12">
+                <p>@Umbraco.Field("s2Description")</p>
+            </div>
+        </div>
+
+        <div class="row text-center hvem-h__middle">
+            <div class="col-12">
+                <img src="/media/1780/ide.svg">
+                <p>@Umbraco.Field("s2CenterImageTitle")</p>
+            </div>
+        </div>
+
+
+        <div class="row text-center hvem-h__bottom">
+            <div class="col-sm-12 col-lg-4">
+                <div>
+                    <img src="/media/1761/checkmark.svg" alt="">
+                    <p>@Umbraco.Field("s2Image1Description")</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div><img src="/media/1761/checkmark.svg" alt="">
+                    <p>@Umbraco.Field("s2Image2Description")</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div><img src="/media/1761/checkmark.svg" alt="">
+                    <p>@Umbraco.Field("s2Image3Description")</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- section 3 -->
+<section class="hvem-h py-5" id="hvem-h__s3">
+    <div class="sc-container">
+        <div class="row text-center sc-heading">
+            <div class="col-lg-12">
+                <h2 class="display-5">@Umbraco.Field("s3Title")</h2>
+
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class=" col-lg-12">
+                <p> @Umbraco.Field("s3Description")</p>
+            </div>
+        </div>
+
+        <div class="row text-center hvem-h__middle">
+            <div class="col-lg-12">
+                <img src="/media/1783/kom-i-gang2.svg">
+                <p>@Umbraco.Field("s3CenterImageTitle")</p>
+            </div>
+        </div>
+
+
+        <div class="row text-center hvem-h__bottom">
+            <div class="col-sm-12 col-lg-4">
+                <div><img src="/media/1761/checkmark.svg" alt="">
+                    <p>@Umbraco.Field("s3Image2Description")</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div><img src="/media/1761/checkmark.svg" alt="">
+                    <p>@Umbraco.Field("s3Image2Description")</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div><img src="/media/1761/checkmark.svg" alt="">
+                    <p>@Umbraco.Field("s3Image3Description")</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</section>
+
+<!-- section 4 -->
+<section class="hvem-h py-5" id="hvem-h__s4">
+    <div class="sc-container">
+        <div class="row text-center sc-heading">
+            <div class="col-12">
+                <h2 class="display-5">@Umbraco.Field("s4Title")</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class=" col-12">
+                <p>@Umbraco.Field("s4Description")</p>
+            </div>
+        </div>
+
+        <div class="row text-center hvem-h__middle">
+            <div class="col-12">
+                <img src="/media/1772/godt-i-gang.svg">
+                <p>@Umbraco.Field("s4CenterImageTitle")</p>
+            </div>
+        </div>
+
+
+        <div class="row text-center hvem-h__bottom">
+            <div class="col-sm-12 col-lg-4">
+                <div><img src="/media/1761/checkmark.svg" alt="">
+                    <p>@Umbraco.Field("s4Image1Description")</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div><img src="/media/1761/checkmark.svg" alt="">
+                    <p>@Umbraco.Field("s4Image2Description")</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div><img src="/media/1761/checkmark.svg" alt="">
+                    <p>@Umbraco.Field("s4Image3Description")</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- section 5 footer -->
+<section class="hvem-h py-5" id="hvem-h__s5" style="color:red">
+    <div class="sc-container">
+        <div class="row text-center sc-heading">
+            <div class="col-lg-12">
+                <div>
+                    <sub class="lead">@Umbraco.Field("s5Title")</sub>
+                    <p>@Umbraco.Field("s5Description")</p>
+                    <button class="btn btn-info">@Umbraco.Field("buttonText")</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

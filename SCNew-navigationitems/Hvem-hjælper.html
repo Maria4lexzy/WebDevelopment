@@ -88,7 +88,8 @@
 
         <div class="row text-center hvem-h__bottom">
             <div class="col-sm-12 col-lg-4">
-                <div><img src="img/checkmark.svg" alt="">
+                <div>
+                    <img src="img/checkmark.svg" alt="">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
@@ -117,10 +118,6 @@
             <div class="col-12">
                 <h2 class="display-5">DIG DER VIL I GANG</h2>
 
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class=" col-12">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ipsum dolorem magnam!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, consequuntur? At, provident quos
                     nobis alias officiis, dignissimos cumque eligendi voluptates eveniet repudiandae, sunt quae vel!</p>
@@ -173,20 +170,8 @@
     <div class="sc-container">
         <div class="row text-center sc-heading">
             <div class="col-12">
-                <h2 class="display-5">DIG DER VIL I GANG</h2>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class=" col-12">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ipsum dolorem magnam!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, consequuntur? At, provident quos
-                    nobis alias officiis, dignissimos cumque eligendi voluptates eveniet repudiandae, sunt quae vel!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam quis, fuga tempore architecto
-                    repudiandae nihil voluptate ipsum natus unde impedit, asperiores ex molestias quam rem laudantium
-                    illum
-                    quaerat eius?
-
-                </p>
+                <h2 class="display-5">@Umbraco.Field("s4Title")</h2>
+                <p>@Umbraco.Field("s4Description")</p>
             </div>
         </div>
 
@@ -232,7 +217,13 @@
                     <sub class="lead">HØRER DU TIL EN AF DISSE TRE?</sub>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem est tenetur, sunt beatae aut
                         culpa dolore impedit nulla eius error ipsam iste veniam nihil?</p>
-                    <button class="btn btn-info">SE MERE</button>
+                    <a href="https://www.startupcentral.dk/vi-tilbyder/"> <button
+                            class="btn btn-secondary-light active">SE
+                            MERE</button></a>
+                    <a href="https://www.startupcentral.dk/vi-tilbyder/" class="btn btn-secondary active"
+                        role="button">@Umbraco.Field("s5ButtonText")</a>
+
+
                 </div>
             </div>
         </div>

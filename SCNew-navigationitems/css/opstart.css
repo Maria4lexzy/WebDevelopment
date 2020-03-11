@@ -17,11 +17,19 @@ body {
 
 }
 
+.sc-container {
+    max-width: 1140px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 /* containers */
-#s1,
-#s3,
-#s5,
-#s7 {
+#opstart__s1,
+#opstart__s3,
+#opstart__s5,
+#opstart__s7 {
     background-color: rgba(248, 244, 244, 0.911);
     color: #083151;
     padding-bottom: 0;
@@ -29,12 +37,12 @@ body {
 
 }
 
-#s7 {
+#opstart__s7 {
     padding: 1rem;
 }
 
-#s2,
-#s4 {
+#opstart__s2,
+#opstart__s4 {
     color: white;
     background-color: #083151;
     padding-bottom: 0;
@@ -42,62 +50,54 @@ body {
 
 }
 
-#s6 {
+#opstart__s6 {
     background-color: rgba(54, 60, 65, 0.857);
     color: whitesmoke;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.s-one {
-    padding-bottom: 2rem;
 
-}
 
-.s-six {
-    color: whitesmoke;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
 
 /* images */
-.s-one__icons {
+.opstart__s1-icons {
     padding: 2rem;
 }
 
-.s-one__icons img {
+.opstart__s1-icons img {
     width: 55%;
     height: auto;
     padding: 1rem;
 }
 
-.triangle img {
+.opstart__triangle img {
     margin: 0;
     padding: 0;
     width: auto;
     height: 100%;
 }
 
-.line img {
+.opstart__line img {
     width: 15%;
     height: 15%;
 
 }
 
-.s__top img {
+.opstart__top img {
     width: 25%;
     height: auto;
     padding: 1.5rem;
 
 }
 
-.s__right img {
+.opstart__right img {
     width: 20%;
     height: auto;
     margin: 1rem 0;
 }
 
-.triangle img {
+.opstart__triangle img {
     margin: 0;
     padding: 0;
     width: 30%;
@@ -125,16 +125,13 @@ hr {
 }
 
 /* sub containers */
-.s__right {
+.opstart__right {
     margin-top: 8rem;
     border: .2rem solid #0487A5;
     padding: 2rem 0;
-
-
-
 }
 
-.s__right-bottom {
+.opstart__right-bottom {
     background-color: #0487A5;
     padding: 2rem;
     text-transform: uppercase;
@@ -145,11 +142,11 @@ hr {
     color: white;
 }
 
-.s__rightbox {
+.opstart__rightbox {
     padding-right: 9rem;
 }
 
-.s__left {
+.opstart__left {
     padding-left: 9rem;
     margin-top: 8rem;
 }
@@ -182,7 +179,7 @@ hr {
         text-transform: uppercase;
     }
 
-    .s-one__icons img {
+    .opstart__s1-icons img {
         width: 25%;
         height: auto;
 
@@ -190,15 +187,7 @@ hr {
 
 
 
-    .s-two hr {
-        width: 19%;
-        border-width: .2rem;
-        border-radius: 2rem;
-
-
-    }
-
-    .s-five .s__bottom p {
+    #opstart__s5 .opstart__bottom p {
         padding: 1rem;
 
     }
@@ -211,14 +200,14 @@ hr {
 
     }
 
-    .triangle img {
+    .opstart__triangle img {
         margin: 0;
         padding: 0;
         width: 25%;
         height: auto;
     }
 
-    .s__top img {
+    .opstart__top img {
         width: 30%;
         height: auto;
         padding: .5rem;
@@ -235,25 +224,57 @@ hr {
     h3 {
         text-transform: capitalize;
     }
+/*  */
 
+/* sub containers */
+.opstart__right {
+    margin-top: 8rem;
+    width: 100%;
+    border: .2rem solid #0487A5;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
 
-    .line img {
+.opstart__right-bottom {
+    background-color: #0487A5;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    /* padding-right: 9rem; */
+    width: fit-content;
+    margin: auto;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.opstart__rightbox {
+    /* padding-right: 9rem; */
+}
+
+.opstart__left {
+    margin-top: 8rem;
+    padding: 2rem;
+}
+/*  */
+
+    .opstart__line img {
         width: auto;
         height: 100%;
         margin-left: -40%;
     }
 
-    .s__left {
+    .opstart__left {
         padding: 1rem;
         margin-top: 5%;
     }
 
-    .s__rightbox {
+    .opstart__rightbox {
         padding: 1rem;
         margin-top: 5%;
     }
 
-    .s__right-bottom {
+    .opstart__right-bottom {
         background-color: #0487A5;
         margin-top: .5rem;
         padding: .5rem;
@@ -284,21 +305,21 @@ hr {
 
     }
 
-    .triangle img {
+    .opstart__triangle img {
         margin: 0;
         padding: 0;
         width: 15%;
         height: auto;
     }
 
-    .s__top img {
+    .opstart__top img {
         width: 20%;
         height: auto;
         padding: .5rem;
 
     }
 
-    .s-one__icons img {
+    .opstart__s1-icons img {
         width: 35%;
         height: auto;
 
@@ -306,7 +327,7 @@ hr {
     }
 
 
-    .line img {
+    .opstart__line img {
         width: auto;
         height: 100%;
         margin-left: -10%;
@@ -315,7 +336,7 @@ hr {
     }
 
 
-    .s__bottom {
+    .opstart__bottom {
         padding: 0;
         margin: 0;
     }
@@ -324,19 +345,19 @@ hr {
         padding-bottom: 0;
     }
 
-    .s__right {
+    .opstart__right {
         border: .2rem solid #0487A5;
         padding: 1rem 0;
 
     }
 
-    .s__right img {
+    .opstart__right img {
         width: 20%;
         height: auto;
         margin: 0;
     }
 
-    .s__right-bottom {
+    .opstart__right-bottom {
         background-color: #0487A5;
         padding: .5rem;
         text-transform: uppercase;
@@ -348,11 +369,11 @@ hr {
 
     }
 
-    .s__rightbox {
+    .opstart__rightbox {
         padding-right: .5rem;
     }
 
-    .s__left {
+    .opstart__left {
         padding-left: .5em;
     }
 
@@ -361,7 +382,7 @@ hr {
 
 /* Large (lg) devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    .s-one__icons img {
+    .opstart__s1-icons img {
         width: 45%;
         height: auto;
     }
@@ -370,7 +391,7 @@ hr {
         font-size: 1.5rem;
     }
 
-    .s__right p {
+    .opstart__right p {
         line-height: .7em;
         font-size: 1rem;
     }
@@ -387,20 +408,20 @@ hr {
         line-height: 1rem;
     }
 
-    .triangle img {
+    .opstart__triangle img {
         margin: 0;
         padding-top: 0;
         width: 15%;
         height: auto;
     }
 
-    .s__top img {
+    .opstart__top img {
         width: 15%;
         height: auto;
         padding: .5rem;
     }
 
-    .line img {
+    .opstart__line img {
         width: 100%;
         height: auto;
         margin-left: 0%;
@@ -408,7 +429,7 @@ hr {
 
     }
 
-    .s__bottom {
+    .opstart__bottom {
         padding: 0;
         margin: 0;
     }
@@ -417,18 +438,18 @@ hr {
         padding-bottom: 0;
     }
 
-    .s__right {
+    .opstart__right {
         padding: 1rem 0;
 
     }
 
-    .s__right img {
+    .opstart__right img {
         width: 20%;
         height: auto;
         margin: 0;
     }
 
-    .s__right-bottom {
+    .opstart__right-bottom {
 
         margin-top: .5rem;
         padding: .5rem;
@@ -436,11 +457,11 @@ hr {
 
     }
 
-    .s__rightbox {
+    .opstart__rightbox {
         padding-right: .5rem;
     }
 
-    .s__left {
+    .opstart__left {
         padding-left: .5em;
     }
 
