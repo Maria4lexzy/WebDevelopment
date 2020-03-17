@@ -2206,11 +2206,6 @@ OPSTART
 
 
 
-.opstart__triangle img {
-    width: 100%;
-    height: auto;
-}
-
 .opstart__top img {
     width: 25%;
     height: auto;
@@ -2227,7 +2222,7 @@ OPSTART
 .opstart__triangle img {
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 1%;
     height: auto;
 }
 
