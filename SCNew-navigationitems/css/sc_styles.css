@@ -2265,38 +2265,6 @@ HVEM HJÆLPER
 
 
 
-
-
-
-.timlinse-line {
-
-    content: '';
-    /* position: absolute; */
-    position: relative;
-    /* max-width: 1200px; */
-    margin: 0 auto;
-
-    width: 16px
-        /* left: 50%;
-    margin-left: -3px; */
-}
-
-.timline-line {
-    content: '';
-    /* position: absolute; */
-
-    color: red;
-    background-color: yellow;
-    top: 0;
-    bottom: 0;
-    /* left: 50%; */
-    margin-left: -3px;
-    border: 1px solid green;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
 #line {
     background-color: green;
     border: 1px solid rgb(87, 0, 128);
@@ -2593,7 +2561,7 @@ HVEM HJÆLPER
 ============================================================================================================================================================
 ============================================================================================================================================================
 ============================================================================================================================================================
-****************Create accoung*********
+****************opstart2*********
 ============================================================================================================================================================
 ============================================================================================================================================================
 ============================================================================================================================================================
@@ -2601,3 +2569,260 @@ HVEM HJÆLPER
 ============================================================================================================================================================
 ============================================================================================================================================================
 */
+/* timeline */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #0487A5;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+
+}
+
+/* timeline top line */
+.timeline-line::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    left: 0%;
+    height: 2vh;
+    background-color: #0487A5;
+    /* border: 4px solid #FF9F55; */
+    top: -.5%;
+    border-radius: 25px;
+
+}
+
+/* containers */
+#start__s1,
+#start__s3,
+#start__s5,
+#start__s7 {
+    background-color: rgba(248, 244, 244, 0.911);
+    color: #083151;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+
+
+#start__s2,
+#start__s4 {
+    color: white;
+    background-color: #083151;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#start__s6 {
+    background-color: rgba(54, 60, 65, 0.857);
+    color: whitesmoke;
+}
+
+
+/* Images */
+.start__s1-icons {
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.start__s1-icons img {
+    width: 35%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.start__triangle img {
+    width: 10%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.start__top img {
+    width: 15%;
+    height: auto;
+
+}
+
+/* texts */
+#start__s1 h2 {
+    font-size: 1.5rem;
+
+}
+
+#start__s1 h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+.start__bottom img {
+    width: 35%;
+    height: auto;
+}
+
+/* boxes left and right */
+
+
+.start__right-bottom {
+    background-color: #0487A5;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    /* padding-right: 9rem; */
+
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.start__right {
+    margin-top: 8rem;
+    width: 100%;
+    border: .2rem solid #0487A5;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.start__left {
+    margin-top: 8rem;
+    padding: 2rem;
+}
+
+/* media */
+
+@media only screen and (max-width: 576px) {
+
+    /* fonts */
+    .start__right {
+        font-size: .6rem;
+        margin: .5rem;
+        padding: .2rem;
+    }
+
+
+    #start__s1 h3 {
+        font-size: .8rem;
+        font-weight: 400;
+    }
+
+    #start__s1 h2 {
+        font-size: .8rem;
+
+    }
+
+    .start-container h3 {
+        font-size: .5rem;
+        margin-top: .2rem;
+
+    }
+
+    #start__s6 h4 {
+        font-size: 1rem;
+    }
+
+    #start__s6 button {
+        padding: .5rem .8rem;
+        font-size: .8rem;
+        margin-top: .5rem;
+    }
+
+    /* Images */
+    .start__s1-icons {
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+
+    }
+
+    .start__s1-icons img {
+        width: 15%;
+        height: auto;
+        margin-bottom: .5rem;
+    }
+
+    .start__triangle img {
+        width: 8%;
+        height: auto;
+        margin-bottom: .5rem;
+    }
+
+    .start__top img {
+        width: 10%;
+        height: auto;
+
+    }
+
+    .start__right-bottom {
+        padding: .2rem;
+        font-size: .5rem;
+        width: fit-content;
+    }
+
+    .start__left {
+        padding: .2rem;
+        font-size: .6rem;
+
+    }
+
+
+    .timeline::before {
+
+        width: 6px;
+        left: 50%;
+    }
+
+    /* timeline top line */
+    .timeline-line::after {
+        width: 100%;
+        height: 1vh;
+        right: 0%;
+
+
+
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .start__right {
+        font-size: .9rem;
+    }
+
+    .start__right-bottom {
+        font-size: 1rem;
+    }
+
+    #start__s1 h3 {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    #start__s1 h2 {
+        font-size: 1rem;
+
+    }
+
+    .start__right-bottom {
+
+        padding: 1rem;
+    }
+}
