@@ -4,6 +4,7 @@ body {
     height: 100vh;
     background-color: rgb(233, 233, 233);
     font-family: 'Poppins', sans-serif;
+    color: rgb(15, 35, 90);
 }
 
 .blog-header {
@@ -15,12 +16,8 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
-    height: 500px;
-}
+    text-shadow: 2px 2px 3px rgba(0, 52, 80, 1);
 
-.blog-header .display-4 {
-    font-size: 3rem;
-    font-weight: 400;
 }
 
 
@@ -30,6 +27,13 @@ body {
     border-radius: 10px;
     margin-right: 2rem;
     color: white;
+    box-shadow: 2px 2px 3px rgba(0, 52, 80, 1);
+}
+
+.blog-header__link .example_f:hover span {
+    padding-right: 25px;
+    color: white;
+
 }
 
 img {
@@ -67,14 +71,14 @@ img {
 /* button effects */
 .example_f {
     border-radius: 10px;
-    border: 1px solid #2388a5;
+    border: 1px solid rgb(15, 35, 90);
     /* border: none; */
-    color: #2388a5;
+    color: rgb(15, 35, 90);
     text-align: center;
     text-transform: uppercase;
     padding: 10px;
     width: 200px;
-    transition: all 0.4s;
+    transition: 0.5s;
     cursor: pointer;
 }
 
@@ -91,16 +95,18 @@ img {
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.5s;
+
 }
+
 
 .example_f:hover span {
     padding-right: 25px;
-    color: #2388a5;
+    color: rgb(15, 35, 90);
 
 }
 
 .example_f:hover span:after {
+    transition: 0.5s;
     opacity: 1;
     right: 0;
 }
@@ -115,10 +121,6 @@ img {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
 }
-
-.sidebar-container .card-item {}
-
-
 
 .shadow-xs {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
@@ -160,28 +162,26 @@ img {
     box-shadow: none;
 }
 
+
 /* Small devices (landscape phones, 576px and up) */
 
 
 @media (min-width: 576px) {
     .container {
-        max-width: 490px;
+        max-width: 600px;
     }
 
-    .blog-header .display-4 {
-        font-size: 1rem;
-    }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .container {
-        max-width: 690px;
+        max-width: 660px;
+
     }
 
-    .blog-header.display-4 {
-        font-size: 1rem;
-    }
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -194,6 +194,13 @@ img {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .container {
-        max-width: 1300px;
+        max-width: 1000px;
+    }
+
+}
+
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1400px;
     }
 }
