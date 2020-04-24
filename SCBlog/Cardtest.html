@@ -54,10 +54,6 @@
                 </div>
             </div>
         </nav>
-
-
-
-
         <div class="container content-container">
             <div class="row">
                 <div class="classic-tabs mx-auto  w-80">
@@ -284,90 +280,13 @@
 
             </div>
         </div>
-        <!--  umbraco-->
-        <div class="container">
-
-            <!-- Card -->
-            <div class="card card-cascade narrower">
-
-                <!-- Card image -->
-                <div class="view view-cascade gradient-card-header purple-gradient">
-
-                    <!-- Title -->
-                    <h2 class="card-header-title">@Model.Name</h2>
-                    <!-- Subtitle -->
-                    <h5 class="mb-0 pb-3 pt-2">Del denne</h5>
-
-                    <!-- Twitter -->
-                    <a href="http://twitter.com/share?text=@Model.Name&url=@Model.UrlWithDomain()"
-                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"
-                        type="button" class="btn-floating"><i class="fab fa-twitter"></i></a>
-
-                    <!-- Facebook -->
-
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=@Model.UrlWithDomain()"
-                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"
-                        type="button" class="btn-floating"><i class="fab fa-facebook-f"></i></a>
-                    <!-- Google + -->
-                    <a type="button" class="btn-floating"><i class="fab fa-google-plus-g"></i></a>
-
-                    <p class="mb-0"><i class="fas fa-calendar mr-2"></i>
-                        <time datetime="@Model.PublishedDate.ToString(" yyyy-MM-dd")>
-                            @Model.PublishedDate.ToString("dd-dd-yyyy")
-                        </time>
-                    </p>
-                    <!-- <p class="mb-0"><i class="fas fa-calendar mr-2"></i>26.07.2017</p> -->
-                    @Html.ThemedPartial(Model, "PostTags")
-                </div>
-
-                <!-- Card content -->
-                <div class="card-body card-body-cascade text-center">
-                    @if (!Model.CroppedPostImageUrl.IsNullOrWhiteSpace())
-                    {
-                    <img class="postImage" alt="@Model.Name" src="@Model.CroppedPostImageUrl" />
-                    }
-
-
-                    <!-- Text -->
-                    <p class="card-text"> @Model.Body</p>
-
-
-                </div>
-                <div class="card-footer bg-transparent ">
-
-                    @if (!Model.Author.Name.IsNullOrWhiteSpace())
-                    {
-                    <section class="author">
-                        @if (!Model.Author.Image.IsNullOrWhiteSpace())
-                        {
-                        <div class="authorimage" style="background: url(@Model.Author.Image)"></div>
-                        }
-                        <p class="attr">Forfatter</p>
-                        <h4>
-                            @if (!Model.Author.BlogUrl.IsNullOrWhiteSpace())
-                            {
-                            <a href="@Model.Author.BlogUrl">@Model.Author.Name</a>
-                            }
-                            else
-                            {
-                            @Model.Author.Name
-                            }
-                        </h4>
-                        @if (!Model.Author.Bio.IsNullOrWhiteSpace())
-                        {
-                        <p class="bio">@Model.Author.Bio</p>
-                        }
-                    </section>
-                    }
-
-                </div>
-            </div>
-            <!-- Card -->
-        </div>
-    </div>
-
 
     </div>
+    <!-- Card -->
+
+
+
+
     <input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-primary"
         data-offstyle="outline-secondary">
     <input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-secondary"

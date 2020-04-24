@@ -7,11 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SC Blog </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
@@ -19,106 +17,431 @@
     <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
     <link rel="stylesheet" href="css/grid_styles.css">
 
-
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png">
-
 </head>
-<header class="container-fluid blog-header">
 
-    <div class="row">
-        <div class="offset-md-1 col-md-8 offset-lg-2 col-lg-5 text-white p-5 ">
-            <img src="img/suc-blue-logo.svg">
-            <h3 class="text-uppercase"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                cupiditate.</h3>
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tempore
-                tempora quis?</p>
-            <div class="blog-header__link d-flex  inline-flex text-center">
-                <a href="#" class="example_f"> <span>BECOME MEMBER</span></a>
+<body>
+    <!-- facebook comments -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
 
-                <a href="#" class="example_f "> <span>Read more</span></a>
+    <!-- blog header -->
+    <div class="jumbotron  blog-header"
+        style="background-image: url(https://www.startupcentral.dk/media/1644/cardsbg.png);">
+        <div class="row">
+            <div class="offset-md-1 col-md-8 offset-lg-2 col-lg-5 text-white p-5 ">
+                <img src="img/suc-blue-logo.svg">
+                <h3 class="text-uppercase"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                    cupiditate.</h3>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tempore
+                    tempora quis?</p>
+                <div class="blog-header__link d-flex  inline-flex text-center">
+                    <a href="#" class="example_f"> <span>BECOME MEMBER</span></a>
+                    <a href="#" class="example_f "> <span>Read more</span></a>
+                </div>
             </div>
         </div>
-
     </div>
 
-</header>
-<div class="container mt-5">
-    <div class=" row">
-        <!-- highlights of page excluding side bar -->
-        <div class=" d-flex align-items-stretch  content-container  col-lg-7 col-xl-8 col-xxl-9">
-            <div class="card card-item shadow-md  ">
-                <img class="card-img-top" src="img/desk.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the
-                        bulk of the
-                        card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, harum, ab
-                        impedit ipsa, corrupti modi at illum tempore est voluptatem ut! Vitae veniam illum placeat qui
-                        id adipisci vel quasi rem sit, facilis sequi beatae quo iure deleniti explicabo nobis! Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Totam, ratione!</p>
+    <div class="view jumbotron card-image blog-item-jumbotron h-50 px-5 py-5"
+        style="background-image: url(https://www.startupcentral.dk/media/1644/cardsbg.png);">
+        <div class="mask text-center rgba-stylish-strong h-50 text-white">
+            <!-- blog title and author name -->
+            <h2 class="card-header-title">BLOG TITLE</h2>
+            <p>Author Name | Author</p>
+            <h5 class="mb-0 pb-3 pt-2">SHAREe</h5>
+            <!-- Facebook -->
+            <a type="button" target="_blank" class="btn-floating shadow"
+                data-href="https://developers.facebook.com/docs/plugins/"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstartupcentral.dk%2F&amp;src=sdkpreparse"><i
+                    class="fab fa-facebook-f"></i></a>
+            <!-- Twitter -->
+            <a type="button"
+                href="https://www.linkedin.com/shareArticle?mini=true&url=http://startupcentral.dk&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn"
+                class="btn-floating shadow"><i class="fab fa-linkedin-in"></i></a>
+            <!-- blog date -->
+            <p class="mb-0"><i class="fas fa-calendar mr-2"></i>26.07.2017</p>
+        </div>
+    </div>
 
 
-                </div>
-                <div class="card-footer bg-transparent text-uppercase ">
-                    <div class="float-right my-auto"> <a href="#" class="example_f "> <span>Read more</span></a>
+
+
+
+    <!-- /Header -->
+    <!-- Blog Main: containeng featured posts + editors choice + .... -->
+    <div class="container mt-5">
+        <div class=" row">
+            <!-- Featured post -->
+            <div class=" d-flex align-items-stretch  content-container  col-lg-7 col-xl-8 col-xxl-9">
+                <div class="card card-item shadow-md  ">
+                    <img class="card-img-top" src="img/desk.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text text-muted">Some quick example text to build on the card title and make up
+                            the
+                            bulk of the
+                            card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, harum, ab
+                            impedit ipsa, corrupti modi at illum tempore est voluptatem ut! Vitae veniam illum placeat
+                            qui
+                            id adipisci vel quasi rem sit, facilis sequi beatae quo iure deleniti explicabo nobis! Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Totam, ratione!</p>
                     </div>
-                    <p>stuff</p>
+                    <div class="card-footer bg-transparent text-uppercase ">
+                        <div class="float-right my-auto"> <a href="post.html" class="example_f "> <span>Read
+                                    more</span></a>
+                        </div>
+                        <p>stuff</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /Feautured post -->
+            <!-- side bar containing top picks and editors choice -->
+            <div
+                class="d-none d-sm-none d-lg-block d-flex align-items-stretch  sidebar-container  col-lg-5 col-xl-4 col-xxl-3">
+                <div class=" row">
+                    <div class="col-sm-6 ">
+                        <!-- top picks-->
+                        <div class="col-12">
+                            <p class="text-uppercase sidebar__headings text-center mt-sm-3 mt-md-3 mb-1 mt-lg-0">Top
+                                Picks
+                            </p>
+                        </div>
+                        <a href="#">
+                            <div class="col-12 ">
+                                <div class="excerpt card card-item mw-100 shadow mt-1">
+                                    <div class="card-body py-3">
+                                        <a href="#">
+                                            <p class="card-title  my-0 overflow-hidden excerpt">
+                                                Lorem ipsum dolor sit amet consur adipisicing
+                                                elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Consequuntur,
+                                                aliquam.
+                                            </p>
+                                        </a>
+                                        <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
+                                            8th march | 10 min read
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=" col-12 ">
+                                <div class="card card-item shadow mt-1">
+                                    <div class="card-body py-3">
+                                        <p class="card-title text-muted my-0">Lorem ipsum dolor sit amet consur
+                                            adipisicing
+                                            elit.
+                                        </p>
+                                        <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
+                                            8th march | 10 min read
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-12 ">
+                                <div class="card card-item shadow mt-1">
+                                    <div class="card-body py-3">
+                                        <p class="card-title excerpt text-muted my-0">Lorem ipsum dolor sit amet consur
+                                            adipisicing
+                                            elit.
+                                        </p>
+                                        <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
+                                            8th march | 10 min read
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- Editors Choice -->
+                    <div class="col-sm-6 col-md-12">
+                        <div class="col-12">
+                            <p class="text-uppercase sidebar__headings text-center mt-sm-3 mt-md-3 mb-0">editors choice
+                            </p>
+                        </div>
+                        <div class=" col-12 ">
+                            <div class="card card-item shadow mt-1">
+                                <div class="card-body py-3">
+                                    <p class="card-title text-muted my-0">Lorem ipsum dolor sit amet consur adipisicing
+                                        elit.
+                                    </p>
+                                    <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
+                                        8th march | 10 min read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-12 ">
+                            <div class="card card-item shadow mt-1">
+                                <div class="card-body py-3">
+                                    <p class="card-title text-muted my-0">Lorem ipsum dolor sit amet consur adipisicing
+                                        elit.
+                                    </p>
+                                    <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
+                                        8th march | 10 min read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-12 ">
+                            <div class="card card-item shadow mt-1">
+                                <div class="card-body py-3">
+                                    <p class="card-title text-muted my-0">Lorem ipsum dolor sit amet consur adipisicing
+                                        elit.
+                                    </p>
+                                    <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
+                                        8th march | 10 min read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-sm-none d-lg-block col-12 ">
+                            <div class="card card-item shadow mt-1">
+                                <div class="card-body py-3">
+                                    <p class="card-title text-muted my-0">Lorem ipsum dolor sit amet consur adipisicing
+                                        elit.
+                                    </p>
+                                    <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
+                                        8th march | 10 min read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /side bar -->
+        </div>
+    </div>
+    <!-- Posts -->
+    <div class="container my-5">
+        <div class="row ">
+            <!-- small column -->
+            <div class="d-flex align-items-stretch col-md-5 m-0 ">
+                <div class="mx-1 card card-item shadow mt-1">
+                    <img class="card-img-top" src="img/water.jpg" alt="Card image cap">
+                    <p class="pl-3 pt-1 card-text bg-transparent text-muted">
+                        8th of march 2020 | idiotness
+                    </p>
+                    <div class="card-body py-3">
+                        <p class="card-title text-muted my-0">Lorem ipsum dolor sit amet consur adipisicing
+                            elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sunt voluptate libero
+                            minima
+                            dignissimos delectus dolores rerum cupiditate neque excepturi!
+                        </p>
+
+                    </div>
+                    <div class="card-footer bg-transparent text-uppercase ">
+                        <div class="float-right my-auto"> <a href="post.html" class="example_f "> <span>Read
+                                    more</span></a>
+                        </div>
+                        <p> ~10 min read</p>
+                    </div>
+                </div>
+            </div>
+            <!-- big column -->
+            <div class="d-flex align-items-stretch col-md-7 m-0">
+                <div class="card card-item shadow ">
+                    <img class="card-img-top" src="img/water.jpg" alt="Card image cap">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text text-muted">Some quick example text to build on the card title and make up
+                            the
+                            bulk of the Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, odio! card's
+                            content.</p>
+                    </div>
+                    <div class="card-footer bg-transparent text-uppercase ">
+                        <div class="float-right my-auto"> <a href="#" class="example_f "> <span>Read more</span></a>
+                        </div>
+                        <p>stuff</p>
+                    </div>
+                </div>
+            </div>
+            <!-- new row start -->
+            <div class="d-flex align-items-stretch col-md-8 my-3">
+                <div class="card card-item shadow">
+                    <img class="card-img-top" src="img/desk.jpg" alt="Card image cap">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <div class="lead font-weight-bold">Blog title</div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                    <div class="card-footer  text-uppercase ">
+                        <div class="float-right my-auto"> <a href="#" class="example_f "> <span>Read more</span></a>
+                        </div>
+                        <p>stuff</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-flex align-items-stretch col-md-4 my-3">
+                <div class="card card-item shadow">
+                    <img class="card-img-top" src="img/desk.jpg" alt="Card image cap">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                    <div class="card-footer bg-transparent text-uppercase ">
+
+                        <p>stuffkkkk</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- /highlights of page without side bar -->
+    </div>
 
-        <!-- side bar -->
-        <div class="d-flex align-items-stretch  sidebar-container  col-md-12 col-lg-5 col-xl-4 col-xxl-3">
-            <div class=" row">
-                <div class="col-sm-6 col-md-12">
-                    <!-- top picks-->
-                    <div class="col-12">
-                        <p class="text-uppercase sidebar__headings text-center mt-sm-3 mt-md-3 mb-1 mt-lg-0">Top Picks
-                        </p>
+    <div class="container bg-transparent">
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <!-- Card -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade gradient-card-header purple-gradient">
+
+                        <!-- Title -->
+                        <h2 class="card-header-title">BLOG TITLE</h2>
+                        <p>Author Name | Author</p>
+                        <!-- Subtitle -->
+                        <h5 class="mb-0 pb-3 pt-2">SHARE</h5>
+
+                        <!-- Facebook -->
+                        <a type="button" target="_blank" class="btn-floating"
+                            data-href="https://developers.facebook.com/docs/plugins/"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstartupcentral.dk%2F&amp;src=sdkpreparse"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Twitter -->
+                        <a type="button"
+                            href="https://www.linkedin.com/shareArticle?mini=true&url=http://startupcentral.dk&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn"
+                            class="btn-floating"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Google + -->
+                        <a type="button" class="btn-floating"><i class="fab fa-google-plus-g"></i></a>
+                        <p class="mb-0"><i class="fas fa-calendar mr-2"></i>26.07.2017</p>
+
                     </div>
-                    <div class="col-12 ">
-                        <div class="card card-item shadow mt-1">
-                            <div class="card-body py-3">
-                                <p class="card-title text-muted my-0">Lorem ipsum dolor sit amet consur adipisicing
-                                    elit.
-                                </p>
-                                <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
-                                    8th march | 10 min read
-                                </p>
-                            </div>
-                        </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade ">
+
+                        <!-- Text -->
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex,
+                            recusandae.
+                            Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
+                            non
+                            quos
+                            laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                            corporis
+                            suscipit
+                            laboriosam, nisi ut aliquid ex ea commodi.</p>
+
+                        <img class="card-img-top" src="img/desk.jpg" alt="Card image cap">
                     </div>
-                    <div class=" col-12 ">
-                        <div class="card card-item shadow mt-1">
-                            <div class="card-body py-3">
-                                <p class="card-title text-muted my-0">Lorem ipsum dolor sit amet consur adipisicing
-                                    elit.
-                                </p>
-                                <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
-                                    8th march | 10 min read
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-12 ">
-                        <div class="card card-item shadow mt-1">
-                            <div class="card-body py-3">
-                                <p class="card-title text-muted my-0">Lorem ipsum dolor sit amet consur adipisicing
-                                    elit.
-                                </p>
-                                <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
-                                    8th march | 10 min read
-                                </p>
-                            </div>
-                        </div>
+                    <div class="card-footer bg-transparent ">
+                        <ul class="list-inline ">Posted in
+                            <li class="list-inline-item"><a href="#" class="tag">#Business</a></li>
+                            <li class="list-inline-item"><a href="#" class="tag">#Tecklklhnology</a></li>
+                            <li class="list-inline-item"><a href="#" class="tag">#Fashion</a></li>
+                            <li class="list-inline-item"><a href="#" class="tag">#Sports</a></li>
+                            <li class="list-inline-item"><a href="#" class="tag">#Economy</a></li>
+                            <li class="list-inline-item"><a href="#" class="tag">#Economy</a></li>
+                        </ul>
+
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="col-sm-6 col-md-12">
+
+        <nav aria-label="Page navigation example ">
+            <ul class="pagination  justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div
+            class="d-lg-none d-xl-block d-flex align-items-stretch  sidebar-container  col-md-12 col-lg-5 col-xl-4 col-xxl-3">
+            <div class=" row">
+                <div class="col-12">
+                    <!-- top picks-->
                     <div class="col-12">
-                        <p class="text-uppercase sidebar__headings text-center mt-sm-3 mt-md-3 mb-0">editors choice</p>
+                        <p class="text-uppercase sidebar__headings text-center mt-sm-3 mt-md-3 mb-1 mt-lg-0">Top
+                            Picks
+                        </p>
+                    </div>
+                    <a href="#">
+                        <div class="col-12 ">
+                            <div class="excerpt card card-item mw-100 shadow mt-1">
+                                <div class="card-body py-3">
+                                    <a href="#">
+                                        <p class="card-title  my-0 overflow-hidden excerpt">
+                                            Lorem ipsum dolor sit amet consur adipisicing
+                                            elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Consequuntur,
+                                            aliquam.
+                                        </p>
+                                    </a>
+                                    <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
+                                        8th march | 10 min read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-12 ">
+                            <div class="card card-item shadow mt-1">
+                                <div class="card-body py-3">
+                                    <p class="card-title text-muted my-0">Lorem ipsum dolor sit amet consur
+                                        adipisicing
+                                        elit.
+                                    </p>
+                                    <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
+                                        8th march | 10 min read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-12 ">
+                            <div class="card card-item shadow mt-1">
+                                <div class="card-body py-3">
+                                    <p class="card-title excerpt text-muted my-0">Lorem ipsum dolor sit amet consur
+                                        adipisicing
+                                        elit.
+                                    </p>
+                                    <p class=" card-text bg-transparent text-uppercase font-weight-bold ">
+                                        8th march | 10 min read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- Editors Choice -->
+                <div class="col-12">
+                    <div class="col-12">
+                        <p class="text-uppercase sidebar__headings text-center mt-sm-3 mt-md-3 mb-0">editors choice
+                        </p>
                     </div>
                     <div class=" col-12 ">
                         <div class="card card-item shadow mt-1">
@@ -170,116 +493,50 @@
                     </div>
 
                 </div>
+
+
             </div>
-        </div>
-        <!-- /side bar -->
 
-    </div>
-
-
-</div>
-<div class="container my-5">
-    <div class="row ">
-        <div class="d-flex align-items-stretch col-md-5 m-0 ">
-            <!-- small column -->
-            <div class="mx-1 card card-item shadow mt-1">
-                <img class="card-img-top" src="img/water.jpg" alt="Card image cap">
-                <p class="pl-3 pt-1 card-text bg-transparent text-muted">
-                    8th of march 2020 | idiotness
-                </p>
-                <div class="card-body py-3">
-                    <p class="card-title text-muted my-0">Lorem ipsum dolor sit amet consur adipisicing
-                        elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sunt voluptate libero minima
-                        dignissimos delectus dolores rerum cupiditate neque excepturi!
-                    </p>
-
-                </div>
-                <div class="card-footer bg-transparent text-uppercase ">
-                    <div class="float-right my-auto"> <a href="#" class="example_f "> <span>Read more</span></a>
-                    </div>
-                    <p> ~10 min read</p>
-                </div>
-            </div>
-        </div>
-        <!-- big column -->
-        <div class=" d-flex align-items-stretch col-md-7 m-0 ">
-            <div class="card card-item shadow ">
-                <img class="card-img-top" src="img/water.jpg" alt="Card image cap">
-
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the
-                        bulk of the Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, odio! card's
-                        content.</p>
-                </div>
-                <div class="card-footer bg-transparent text-uppercase ">
-                    <div class="float-right my-auto"> <a href="#" class="example_f "> <span>Read more</span></a>
-                    </div>
-                    <p>stuff</p>
-                </div>
-            </div>
-        </div>
-        <!-- new row start -->
-        <div class="d-flex align-items-stretch col-md-8 my-3">
-            <div class="card card-item shadow">
-                <img class="card-img-top" src="img/desk.jpg" alt="Card image cap">
-
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-                <div class="card-footer  text-uppercase ">
-                    <div class="float-right my-auto"> <a href="#" class="example_f "> <span>Read more</span></a>
-                    </div>
-                    <p>stuff</p>
-                </div>
-            </div>
         </div>
 
 
-        <div class="d-flex align-items-stretch col-md-4 my-3">
-            <div class="card card-item shadow">
-                <img class="card-img-top" src="img/desk.jpg" alt="Card image cap">
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
+        <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+        <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+        <script type="text/javascript" src="bootpag.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
 
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-                <div class="card-footer bg-transparent text-uppercase ">
+        <!-- when you scroll down on the page, the navigation bar will change color otherwise it'll be transparent -->
+        <script>
 
-                    <p>stuffkkkk</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<body>
-
-
-
-    <!-- when you scroll down on the page, the navigation bar will change color otherwise it'll be transparent -->
-    <script>$('#iconified').on('keyup', function () {
-            var input = $(this);
-            if (input.val().length === 0) {
-                input.addClass('empty');
-            } else {
-                input.removeClass('empty');
-            }
-        });
-        $(function () {
-            $(window).on('scroll', function () {
-                if ($(window).scrollTop() > 10) {
-                    $('.navbar').addClass('active');
+            add_filter('the_content', 'wpb_linkedin_share_before');
+            $('#iconified').on('keyup', function () {
+                var input = $(this);
+                if (input.val().length === 0) {
+                    input.addClass('empty');
                 } else {
-                    $('.navbar').removeClass('active');
+                    input.removeClass('empty');
                 }
             });
-        });
-    </script>
+            $(function () {
+                $(window).on('scroll', function () {
+                    if ($(window).scrollTop() > 10) {
+                        $('.navbar').addClass('active');
+                    } else {
+                        $('.navbar').removeClass('active');
+                    }
+                });
+            });
+        </script>
 </body>
 
 </html>
