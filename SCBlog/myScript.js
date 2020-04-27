@@ -48,6 +48,10 @@ $(document).ready(function () {
         stickyToggle(sticky, stickyWrapper, $(window));
     });
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 747c394535a683ffbe9e678ba3cee998f58b3631
 //add & remove arrow up and down
 $('.collapse').on('shown.bs.collapse', function () {
     $(this).parent().find(".fa-arrow-down").removeClass("fa-arrow-down").addClass("fa-arrow-up");
