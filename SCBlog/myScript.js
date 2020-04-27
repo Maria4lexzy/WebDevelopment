@@ -48,11 +48,22 @@ $(document).ready(function () {
         stickyToggle(sticky, stickyWrapper, $(window));
     });
 });
+
+//add & remove arrow up and down
 $('.collapse').on('shown.bs.collapse', function () {
-    $(this).parent().find(".fa-arrow-down").removeClass("fa-arrow-down").addClass("fa-arrow-up").delay(800).fadeIn(400);
+    $(this).parent().find(".fa-arrow-down").removeClass("fa-arrow-down").addClass("fa-arrow-up");
 }).on('hidden.bs.collapse', function () {
-    $(this).parent().find(".fa-arrow-up").removeClass("fa-arrow-up").addClass("fa-arrow-down").delay(800).fadeIn(400);
+    $(this).parent().find(".fa-arrow-up").removeClass("fa-arrow-up").addClass("fa-arrow-down");
 });
+/*swipe function */
+
+   $("#myCarousel").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#myCarousel").swipeleft(function() {
+      $(this).carousel('next');
+   });
+
 /*scroll function*/
 window.onscroll = function () { myFunction() };
 
