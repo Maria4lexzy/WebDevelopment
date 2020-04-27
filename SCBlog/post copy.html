@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SC Blog </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- flickity -->
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <link rel="stylesheet" href="css/grid_styles.css">
+
+
+
+</head>
+
+<body>
+    <!-- facebook comments -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
+    <!-- progress bar -->
+
+
+
+
+
+    <nav class="icon-bar">
+        <ul>
+            <li class=" facebook"><a target="_blank" data-href="https://developers.facebook.com/docs/plugins/"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstartupcentral.dk%2F&amp;src=sdkpreparse">Share
+                    on Facebook<i class="fab fa-facebook"></i></a></li>
+            <li class="linkedin"> <a target="_blank"
+                    href="https://www.linkedin.com/shareArticle?mini=true&url=http://startupcentral.dk&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn">
+                    share on Linked
+                    in<i class="fab fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container-fluid"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img src=""
+                    alt="StartupCentral" height="40"></a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/om-os" class="nav-link">Om os</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vi Tilbyder</a>
+                        <div class="dropdown-menu text-left" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/vores-samarbejdspartnere/">Samarbejdspartnere</a>
+                            <a class="dropdown-item" href="/sc_startuplounge/">Netværksgruppe</a>
+                            <a class="dropdown-item" href="/sc_help/">Vi Tilbyder</a>
+                            <div>
+                    </li>
+                    <li class="nav-item"><a href="/Kontakt" class="nav-link ">Kontakt</a></li>
+                    <li class="nav-item"><a href="login-og-oprettelse" class="nav-link ">Login/Opret</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="progress-container ">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <!-- blog post header -->
+    <div class="view jumbotron card-image blog-item-jumbotron h-50 px-5 py-5 mt-5" style=" background: linear-gradient(rgba(0, 0, 0, .2),
+        rgba(0, 0, 0, .2)), url(/img/desk.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+
+
+        <div class="col-md-6 mx-auto text-white text-center">
+            <!-- blog title and author name -->
+            <h2 class="card-title" data-toggle="sticky-onscroll">BLOG TITLE</h2>
+            <p class="d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nihil animi
+                alias facilis ipsum
+                corporis similique magnam necessitatibus quidem aliquam!</p>
+            <p>Author Name | Author</p>
+            <p class="mb-0"><i class="fas fa-calendar mr-2"></i>26.07.2017</p>
+        </div>
+    </div>
+    <div class=" container ">
+        <div class="text-center my-3 ">
+            <button class="btn  btn-block" type="button" data-toggle="collapse" data-target="#top_picks_collapse"
+                aria-expanded="true" aria-controls="top_picks_collapse">
+                Similar <span class="fas fa-arrow-down"></span>
+
+            </button>
+
+        </div>
+
+        <div class="text-center my-3 ">
+            <a class="btn-floating" href="#top_picks_slides" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+            <button class="collapse-btn btn" data-toggle="collapse" data-target="#top_picks_collapse"
+                aria-expanded="true" aria-controls="top_picks_collapse">
+                Similar <i class="fas fa-arrow-down"></i>
+            </button>
+            <a class="btn-floating" href="#top_picks_slides" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+        </div>
+        <!--Carousel Wrapper-->
+        <div class="collapse my-3" id="top_picks_collapse">
+
+            <div id="top_picks_slides" class="carousel slide" data-interval="false" data-ride="carousel">
+
+                <!--Controls-->
+
+
+                <!--/.Controls-->
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#top_picks_slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#top_picks_slides" data-slide-to="1"></li>
+                    <li data-target="#top_picks_slides" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active ">
+                        <div class="card ">
+                            <img class="card-img-top d-block w-100"
+                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text text-truncate">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Minus
+                                    quibusdam odio rerum veritatis dolorem? Harum quas distinctio debitis beatae
+                                    accusamus
+                                    unde, cumque adipisci, totam fugiat minima id sapiente excepturi expedita?</p>
+                            </div>
+                            <div class="card-footer bg-transparent text-uppercase ">
+                                <div class="float-right my-auto"> <a href="post.html" class="example_f ">
+                                        <span>Read more</span></a>
+                                </div>
+                                <p>stuff</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                        <div class="card ">
+                            <img class="card-img-top d-block w-100"
+                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text text-truncate">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Minus
+                                    quibusdam odio rerum verit</p>
+                            </div>
+                            <div class="card-footer bg-transparent text-uppercase ">
+                                <div class="float-right my-auto"> <a href="post.html" class="example_f ">
+                                        <span>Read more</span></a>
+                                </div>
+                                <p>stuff</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Second slide-->
+
+                    <!--Third slide-->
+                    <div class="carousel-item">
+
+                        <div class="card ">
+                            <img class="card-img-top d-block w-100"
+                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text text-truncate">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Minus
+                                    quibusdam odio rerum veritatis dolorem? Harum quas distinctio debitis beatae
+                                    accusamus
+                                    unde, cumque adipisci, totam fugiat minima id sapiente excepturi expedita?</p>
+                            </div>
+                            <div class="card-footer bg-transparent text-uppercase ">
+                                <div class="float-right my-auto"> <a href="post.html" class="example_f ">
+                                        <span>Read more</span></a>
+                                </div>
+                                <p>stuff</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#top_picks_slides" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#top_picks_slides" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+
+    </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+    <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+    <script type="text/javascript" src="bootpag.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+
+    <script src="myScript.js"></script>
+
+
+</body>
+
+</html>
+</body>

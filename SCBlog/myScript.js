@@ -56,12 +56,13 @@ $('.collapse').on('shown.bs.collapse', function () {
 });
 /*swipe function */
 
-   $("#myCarousel").swiperight(function() {
-      $(this).carousel('prev');
-    });
-   $("#myCarousel").swipeleft(function() {
-      $(this).carousel('next');
-   });
+$("#myCarousel").swiperight(function () {
+    $(this).carousel('prev');
+});
+$("#myCarousel").swipeleft(function () {
+    $(this).carousel('next');
+});
+
 
 /*scroll function*/
 window.onscroll = function () { myFunction() };
