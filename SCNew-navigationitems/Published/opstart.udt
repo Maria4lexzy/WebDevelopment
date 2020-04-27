@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType Folders="StartupCentral_V2/Compositions">
+  <Info>
+    <Name>Før Opstart Controls</Name>
+    <Alias>opstart</Alias>
+    <Icon>icon-defrag</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Description />
+    <AllowAtRoot>False</AllowAtRoot>
+    <IsListView>False</IsListView>
+    <Compositions />
+    <AllowedTemplates />
+    <DefaultTemplate></DefaultTemplate>
+  </Info>
+  <Structure />
+  <GenericProperties>
+    <GenericProperty>
+      <Name>S1 Description</Name>
+      <Alias>s1Description</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 1</Tab>
+      <SortOrder>4</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S1 Image3 Title</Name>
+      <Alias>s1Image3Title</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Section 1</Tab>
+      <SortOrder>2</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S1 Image2 Title</Name>
+      <Alias>s1Image2Title</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Section 1</Tab>
+      <SortOrder>1</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S1 Image1 Title</Name>
+      <Alias>s1Image1Title</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Section 1</Tab>
+      <SortOrder>0</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S1 Image4 Title</Name>
+      <Alias>s1Image4Title</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Section 1</Tab>
+      <SortOrder>3</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S2 Left Description</Name>
+      <Alias>s2LeftDescription</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 2</Tab>
+      <SortOrder>2</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S2 Right Description</Name>
+      <Alias>s2RightDescription</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 2</Tab>
+      <SortOrder>1</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S2 Title</Name>
+      <Alias>s2Title</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Section 2</Tab>
+      <SortOrder>0</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S2 Right Bottom Description</Name>
+      <Alias>s2RightBottom</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 2</Tab>
+      <SortOrder>3</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S3 Right Description</Name>
+      <Alias>s3RightDescription</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 3</Tab>
+      <SortOrder>2</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S3 Left description</Name>
+      <Alias>s3LeftDescription</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 3</Tab>
+      <SortOrder>1</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S3 Title</Name>
+      <Alias>s3Title</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Section 3</Tab>
+      <SortOrder>0</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S3 Right Bottom Description</Name>
+      <Alias>s3RightBottom</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 3</Tab>
+      <SortOrder>3</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S5 Description</Name>
+      <Alias>s5Description</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 5</Tab>
+      <SortOrder>1</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S5 Title</Name>
+      <Alias>s5Title</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Section 5</Tab>
+      <SortOrder>0</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S6 Button Text</Name>
+      <Alias>s6ButtonText</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Section 6</Tab>
+      <SortOrder>2</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S6 Title</Name>
+      <Alias>s6Title</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Section 6</Tab>
+      <SortOrder>0</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S6 Description</Name>
+      <Alias>s6Description</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 6</Tab>
+      <SortOrder>1</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S7 Title</Name>
+      <Alias>s7Title</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Section 7</Tab>
+      <SortOrder>0</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S7 Description</Name>
+      <Alias>s7Description</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 7</Tab>
+      <SortOrder>1</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S4 Right Bottom Description</Name>
+      <Alias>s4RightBottom</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 4</Tab>
+      <SortOrder>3</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S4 Left Description</Name>
+      <Alias>s4LeftDescription</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 4</Tab>
+      <SortOrder>1</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S4 title</Name>
+      <Alias>s4Title</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Section 4</Tab>
+      <SortOrder>0</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>S4 Right Description</Name>
+      <Alias>s4RightDescription</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Section 4</Tab>
+      <SortOrder>2</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+  </GenericProperties>
+  <Tabs>
+    <Tab>
+      <Id>183</Id>
+      <Caption>Section 1</Caption>
+      <SortOrder>0</SortOrder>
+    </Tab>
+    <Tab>
+      <Id>184</Id>
+      <Caption>Section 2</Caption>
+      <SortOrder>1</SortOrder>
+    </Tab>
+    <Tab>
+      <Id>185</Id>
+      <Caption>Section 3</Caption>
+      <SortOrder>2</SortOrder>
+    </Tab>
+    <Tab>
+      <Id>186</Id>
+      <Caption>Section 5</Caption>
+      <SortOrder>4</SortOrder>
+    </Tab>
+    <Tab>
+      <Id>187</Id>
+      <Caption>Section 6</Caption>
+      <SortOrder>5</SortOrder>
+    </Tab>
+    <Tab>
+      <Id>188</Id>
+      <Caption>Section 7</Caption>
+      <SortOrder>6</SortOrder>
+    </Tab>
+    <Tab>
+      <Id>189</Id>
+      <Caption>Section 4</Caption>
+      <SortOrder>3</SortOrder>
+    </Tab>
+  </Tabs>
+</DocumentType>

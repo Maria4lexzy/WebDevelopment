@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SC Blog </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.png">
+
+</head>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sit reprehenderit, consequatur sed laudantium
+    autem facilis hic quaerat quam aspernatur adipisci, odio quos explicabo laborum illo. Ut in odit qui.</p>
+
+<body>
+
+    <header class="blog-header">
+        <nav class="navbar navbar-expand-lg fixed-top ">
+            <div class="container-fluid"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img
+                        src="/img/intro.jpg" alt="StartupCentral" height="40"></a>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="/om-os" class="nav-link">Om os</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vi Tilbyder</a>
+                            <div class="dropdown-menu text-left" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/vores-samarbejdspartnere/">Samarbejdspartnere</a>
+                                <a class="dropdown-item" href="/sc_startuplounge/">Netværksgruppe</a>
+                                <a class="dropdown-item" href="/sc_help/">Vi Tilbyder</a>
+                                <div>
+                        </li>
+                        <li class="nav-item"><a href="/Kontakt" class="nav-link ">Kontakt</a></li>
+                        <li class="nav-item"><a href="login-og-oprettelse" class="nav-link ">Login/Opret</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container content-container">
+            <div class="row">
+                <div class="classic-tabs mx-auto  w-80">
+                    <div class="nav-border">
+                        <ul class="nav  justify-content-center text-uppercase font-weight-bold" id="myClassicTabShadow"
+                            role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link  waves-light active show" id="profile-tab-classic-shadow"
+                                    data-toggle="tab" href="#profile-classic-shadow" role="tab"
+                                    aria-controls="profile-classic-shadow" aria-selected="true">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-light" id="follow-tab-classic-shadow" data-toggle="tab"
+                                    href="#follow-classic-shadow" role="tab" aria-controls="follow-classic-shadow"
+                                    aria-selected="false">Follow</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-light" id="contact-tab-classic-shadow" data-toggle="tab"
+                                    href="#contact-classic-shadow" role="tab" aria-controls="contact-classic-shadow"
+                                    aria-selected="false">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-light" id="awesome-tab-classic-shadow" data-toggle="tab"
+                                    href="#awesome-classic-shadow" role="tab" aria-controls="awesome-classic-shadow"
+                                    aria-selected="false">Be awesome</a>
+                            </li>
+                            <li class="nav-item">
+                                <form class="form mt-3 ">
+                                    <input class="form-control  mr-sm-2 search-input" type="search" placeholder="search"
+                                        aria-label="Search"><i class="fas fa-search mt-2"></i>
+
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center ">
+                <div class="col-12">
+                    <img src="img/intro.jpg" width="25%" alt="" class="img-fluid rounded-circle py-3">
+                    <h2 class="display-2">WELCOME TO OUR BLOG</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- card start -->
+    <section class="content-container">
+        <div class="container">
+            <div class="row">
+                <div class=" offset-1 col-10">
+                    <div class="row">
+                        <!-- <div class="col-12 pb-5">
+                           
+                            <div class="card d-flex flex-lg-row h-100">
+                              
+                                @if (!post.PostImageUrl.IsNullOrWhiteSpace())
+                                {
+                                var thumbnail = post.GetCropUrl("postImage", "thumbnail");
+                                if (!thumbnail.IsNullOrWhiteSpace())
+                                {
+                                <img class="card-img-top" src="img/desk.jpg" alt="Card image cap"
+                                    style="min-height: 300px; max-height: 300px;">
+                                }
+                                }
+                                <div class="d-flex flex-column">
+                               
+
+                                    <div class="card-body ">
+
+                                        
+                                        <h4 class="card-title"><a href="@post.Url">@post.Name</a></h4>
+                                        <time datetime="@post.PublishedDate.ToString(" yyyy-MM-dd")">
+                                            @post.PublishedDate.ToString("dd-dd-yyyy")
+                                        </time>
+                                      
+                                        <p class="card-text"> @post.Excerpt&hellip;</p>
+                                      
+                                       
+                                    </div>
+                                    <div class="card-footer bg-transparent ">
+                                        <p class="float-left">Lorem, ipsum.</p>
+                                        <a href="@post.Url" class="btn btn-primary float-right">Til artikel <i
+                                                class="fa fa-chevron-circle-right"></i></a>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div> -->
+                        <!-- Card  2-->
+                        <div class="col-12 pb-5">
+                            <!-- Card -->
+                            <div class="card h-100 d-flex flex-lg-row" id="post-list">
+                                <!-- Card image -->
+
+                                <img class="card-img-top" src="img/desk.jpg" alt="Card image cap"
+                                    style="min-height: 300px; max-height: 300px;">
+
+                                <div class="d-flex flex-column">
+                                    <!-- Card content -->
+
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h4 class="card-title"><a>Card title</a></h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the
+                                            bulk of the card's
+                                            .</p>
+                                        <!-- Button -->
+                                        <!-- <div class="card-footer bg-transparent border-success">Footer</div> -->
+                                    </div>
+                                    <div class="card-footer bg-transparent light-100">
+                                        <a href="#" class="example_f float-left"> <span>Read more</span>
+                                        </a>
+                                        <p class="float-right"><span>Read more</span></p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Card -->
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h5 class="display-5">
+                    Blog title
+                </h5>
+
+            </div>
+            <div class="col-12">
+                <ul class="list-inline ">Posted in
+                    <li class="list-inline-item"><a href="#" class="tag">#Business</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Technology</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Fashion</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Sports</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Economy</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Economy</a></li>
+                </ul>
+                <p>timmee</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Card -->
+        <div class="card card-cascade narrower">
+
+            <!-- Card image -->
+            <div class="view view-cascade gradient-card-header purple-gradient">
+
+                <!-- Title -->
+                <h2 class="card-header-title">Ally Cook</h2>
+                <!-- Subtitle -->
+                <h5 class="mb-0 pb-3 pt-2">Follow me</h5>
+
+                <!-- Facebook -->
+                <a type="button" class="btn-floating"><i class="fab fa-facebook-f"></i></a>
+                <!-- Twitter -->
+                <a type="button" class="btn-floating"><i class="fab fa-twitter"></i></a>
+                <!-- Google + -->
+                <a type="button" class="btn-floating"><i class="fab fa-google-plus-g"></i></a>
+                <p class="mb-0"><i class="fas fa-calendar mr-2"></i>26.07.2017</p>
+                <ul class="list-inline post-tags">TAGS
+                    <li class="list-inline-item"><a href="#" class="tag">#Business</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Technology</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Fashion</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Sports</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Economy</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Economy</a></li>
+                </ul>
+            </div>
+
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center">
+
+                <!-- Text -->
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex,
+                    recusandae.
+                    Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
+                    non
+                    quos
+                    laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                    corporis
+                    suscipit
+                    laboriosam, nisi ut aliquid ex ea commodi.</p>
+
+                <img class="card-img-top" src="img/desk.jpg" alt="Card image cap"
+                    style="min-height: 300px; max-height: 300px;">
+            </div>
+            <div class="card-footer bg-transparent ">
+                <ul class="list-inline ">Posted in
+                    <li class="list-inline-item"><a href="#" class="tag">#Business</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Technology</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Fashion</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Sports</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Economy</a></li>
+                    <li class="list-inline-item"><a href="#" class="tag">#Economy</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Card -->
+
+
+
+
+    <input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-primary"
+        data-offstyle="outline-secondary">
+    <input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-secondary"
+        data-offstyle="outline-success">
+    <input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-success" data-offstyle="outline-danger">
+    <input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-danger" data-offstyle="outline-warning">
+    <input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-warning" data-offstyle="outline-info">
+    <input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-info" data-offstyle="outline-light">
+    <input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-light" data-offstyle="outline-dark">
+    <input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-dark" data-offstyle="outline-primary">
+    <!--- Footer -->
+
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-md-4"><img src="img/suc-blue-logo.svg" width="25%" height="auto">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ut.</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5 class="display-5">LINKS</h5>
+                    <hr class="light">
+                    <p>Monday 08am-5pm</p>
+                    <p>Tuesday 08am-5pm</p>
+                    <p>Wednesday 08am-3pm</p>
+                    <p>Thurday 08am-11am</p>
+                    <p>friday 08am-11am</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="display-5">KONTAKT OS</h5>
+                    <hr class="light">
+                    <p><a href=""></a>Om os</p>
+                    <p><a href=""></a>Om os</p>
+                    <p><a href=""></a>Om os</p>
+                    <p><a href=""></a>Lorem, ipsum dolor.</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>
+                        &copy; w3newbie.com
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>$('#iconified').on('keyup', function () {
+            var input = $(this);
+            if (input.val().length === 0) {
+                input.addClass('empty');
+            } else {
+                input.removeClass('empty');
+            }
+        });
+        $(function () {
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() > 10) {
+                    $('.navbar').addClass('active');
+                } else {
+                    $('.navbar').removeClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
